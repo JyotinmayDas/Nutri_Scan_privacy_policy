@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - NutriScan</title>
+  <style>
+    :root {
+      --primary: #22A447;
+      --primary-soft: #DCFCE7;
+      --lime: #D9F99D;
+      --bg: #F6FBF4;
+      --surface: #FFFFFF;
+      --text: #182218;
+      --muted: #526356;
+      --border: #D9EAD8;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 20px 16px 48px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .hero {
+      background: linear-gradient(135deg, var(--lime), var(--primary-soft));
+      border-radius: 24px;
+      padding: 28px 24px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+    }
+    .badge {
+      display: inline-block;
+      background: var(--text);
+      color: #FFFFFF;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 999px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 12px 0 6px;
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .card {
+      background: var(--surface);
+      border-radius: 20px;
+      padding: 22px;
+      margin-bottom: 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 8px rgba(24, 34, 24, 0.04);
+    }
+    h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    p {
+      margin: 0 0 12px;
+      font-size: 15px;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+    ul {
+      margin: 8px 0 12px;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+    .disclaimer-box {
+      background: var(--primary-soft);
+      border-left: 4px solid var(--primary);
+      padding: 14px 16px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 28px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <span class="badge">Official Policy Document</span>
+      <h1>Privacy Policy &amp; Terms of Use</h1>
+      <p class="subtitle">NutriScan – Smart Food &amp; Calorie Tracker &bull; Effective Date: November 3, 2026</p>
+    </div>
+
+    <div class="card">
+      <h2>1. Introduction &amp; Overview</h2>
+      <p>
+        Welcome to <strong>NutriScan</strong> (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;). We are committed to protecting your personal privacy and securing your health and nutrition records. This Privacy Policy explains how we collect, use, store, and safeguard your information when you use the NutriScan mobile application.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>2. Information We Collect</h2>
+      <ul>
+        <li><strong>Account Information:</strong> When you sign in with Google Authentication, we receive your basic profile identifier (User ID, display name, and email address) to synchronize your personal records securely across sessions.</li>
+        <li><strong>Body &amp; Nutrition Profile Metrics:</strong> Information you voluntarily enter, including age, height, current weight, target weight, gender (optional), activity level, dietary preference, fitness goal, and daily hydration target.</li>
+        <li><strong>Food Diary, Water &amp; Weight Logs:</strong> Meal entries, macronutrient breakdowns, water intake logs, and weight history saved in your personal diary.</li>
+        <li><strong>Meal Photos &amp; Camera Access:</strong> When you capture or select a food photo using the Scanner, the image is compressed and transmitted securely to analyze dish items, portion weights, and nutritional values. We do not sell or publicly share your food photos.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. How We Use Your Information</h2>
+      <ul>
+        <li>To calculate your estimated Basal Metabolic Rate (BMR), Total Daily Energy Expenditure (TDEE), Body Mass Index (BMI), and daily macronutrient goals using the Mifflin-St Jeor equation.</li>
+        <li>To identify dishes and estimate calories, protein, carbohydrates, fats, fiber, and sugar from food images you choose to scan.</li>
+        <li>To generate personalized daily meal plans tailored to your dietary preferences (such as Bengali Traditional, Indian Vegetarian, Non-Vegetarian, Vegan, or High-Protein diets).</li>
+        <li>To synchronize your food diary, hydration logs, and weight progress across your authenticated device sessions.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>4. Data Storage, Security &amp; Zero-Trust Protection</h2>
+      <p>
+        Your personal profile, food diary, water intake history, and weight records are stored in Google Cloud Firestore and cached locally on your device for offline reliability.
+      </p>
+      <ul>
+        <li><strong>Strict Per-User Isolation:</strong> Cloud Firestore security rules enforce strict ownership checks so that only your authenticated account (`request.auth.uid`) can read, create, update, or delete your personal records.</li>
+        <li><strong>Encryption in Transit &amp; at Rest:</strong> All network requests and image analyses are transmitted over encrypted HTTPS/TLS channels.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>5. Permissions We Request</h2>
+      <ul>
+        <li><strong>Camera (`android.permission.CAMERA`):</strong> Requested only when you tap the camera button to capture a meal photo for nutritional scanning.</li>
+        <li><strong>Photo Picker:</strong> Uses the system Android Photo Picker so you can select meal photos from your gallery without granting broad storage permissions.</li>
+        <li><strong>Internet (`android.permission.INTERNET`):</strong> Used to authenticate your account, analyze meal images, and sync your nutrition diary.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>6. Account &amp; Data Deletion Rights</h2>
+      <p>
+        You have full control over your personal data at all times:
+      </p>
+      <ul>
+        <li>You can edit your name, age, height, weight, and dietary goals directly from the <strong>Profile</strong> tab.</li>
+        <li>You can delete individual food diary entries or water logs at any time.</li>
+        <li>You can permanently delete your profile data and sign out at any time by tapping <strong>Delete Profile Data</strong> in the <strong>Profile &amp; Settings</strong> screen.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>7. Medical &amp; Nutritional Disclaimer</h2>
+      <p>
+        NutriScan is a general wellness, food tracking, and educational nutrition tool. It is <strong>not</strong> a medical device and does not provide medical advice, diagnosis, or treatment.
+      </p>
+      <div class="disclaimer-box">
+        Important: All calorie requirements, BMI classifications, visual meal scan quantities, and macronutrient breakdowns are approximate estimates. Always consult a qualified physician or registered dietitian before starting any new diet, weight-loss program, or nutrition regimen, especially if you have a medical condition.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>8. Contact Us</h2>
+      <p>
+        If you have questions or requests regarding this Privacy Policy or your personal data, please contact our support team through the application settings or via email at <strong>support@nutriscan.app</strong>.
+      </p>
+    </div>
+
+    <div class="footer">
+      &copy; 2026 NutriScan &bull; Smart Food &amp; Calorie Tracker. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
